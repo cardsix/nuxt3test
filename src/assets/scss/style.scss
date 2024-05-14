@@ -1,0 +1,436 @@
+// @import 'global-rem.scss';
+@import 'variable.scss';
+html,
+body,
+#nuxt-root {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background:#13151d;
+    color:#fff;
+}
+
+html.dark {
+    color: white;
+    background: #222;
+}
+
+body {
+    /* overflow-y: scroll; */
+    // font-size: 16PX;
+}
+
+
+.el-card {
+    .el-card__body {
+        padding-right: 10px;
+    }
+
+    .el-scrollbar {
+        padding-right: 10px;
+    }
+}
+
+.default-btn{
+    background: #153447;
+    border: 2px solid #31C1FF;
+    position: relative;
+
+    align-items: center;
+    border-radius: 2px;
+    color: #e2e2e2;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.75rem;
+    font-weight: 600;
+    gap: 0.3rem;
+    gap: var(--core-button-gap, 0.3rem);
+    justify-content: center;
+    line-height: 1.1;
+    padding: 0.6875rem 1.375rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.cursymbol-green{
+    color:#2abd69;
+}
+.deactive{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: filter 0.5s;
+    border: 2px solid #666;
+}
+
+//  箱子饰品背景色
+
+
+.ornaments-rarity1 {
+    background-image: url('/@/assets/images/case/f.png'), linear-gradient(0deg, #2B2E3A 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #302F35;
+    position: relative;
+  }
+  
+  .ornaments-rarity1:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(176, 195, 217, 0.1) 0%, #B0C3D9 49%, rgba(176, 195, 217, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  
+  
+  .ornaments-rarity7 {
+    background-image: url('@/assets/images/case/f.png'), linear-gradient(0deg, #2B2E3A 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #302F35;
+    position: relative;
+  }
+  
+  .ornaments-rarity7:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(176, 195, 217, 0.1) 0%, #B0C3D9 49%, rgba(176, 195, 217, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  .ornaments-rarity2 {
+    //background-image: url('@/assets/img/boxBackground/02.png')!important;
+    background-image: url('@/assets/images/case/e.png'), linear-gradient(0deg, #222741 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #1E223D;
+    position: relative;
+  }
+  
+  .ornaments-rarity2:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(75, 105, 255, 0.1) 0%, #4B69FF 49%, rgba(75, 105, 255, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  .ornaments-rarity8 {
+    //background-image: url('@/assets/img/boxBackground/02.png')!important;
+    background-image: url('@/assets/images/case/e.png'), linear-gradient(0deg, #222741 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #1E223D;
+    position: relative;
+  }
+  
+  .ornaments-rarity8:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(75, 105, 255, 0.1) 0%, #4B69FF 49%, rgba(75, 105, 255, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  
+  
+  .ornaments-rarity13 {
+    //background-image: url('@/assets/img/boxBackground/02.png')!important;
+    background-image: url('@/assets/images/case/e.png'), linear-gradient(0deg, #222741 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #1E223D;
+    position: relative;
+  }
+  
+  .ornaments-rarity13:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(75, 105, 255, 0.1) 0%, #4B69FF 49%, rgba(75, 105, 255, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  
+  .ornaments-rarity3 {
+    background-image: url('@/assets/images/case/d.png'), linear-gradient(0deg, #26223A 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #2C1E3D;
+    position: relative;
+  }
+  
+  .ornaments-rarity3:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(136, 71, 255, 0.1) 0%, #8847FF 49%, rgba(136, 71, 255, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  
+  
+  .ornaments-rarity9 {
+    background-image: url('@/assets/images/case/d.png'), linear-gradient(0deg, #26223A 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #2C1E3D;
+    position: relative;
+  }
+  
+  .ornaments-rarity9:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(136, 71, 255, 0.1) 0%, #8847FF 49%, rgba(136, 71, 255, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  .ornaments-rarity14 {
+    background-image: url('@/assets/images/case/d.png'), linear-gradient(0deg, #26223A 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #2C1E3D;
+    position: relative;
+  }
+  
+  .ornaments-rarity14:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(136, 71, 255, 0.1) 0%, #8847FF 49%, rgba(136, 71, 255, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  
+  
+  .ornaments-rarity4 {
+    background-image: url('@/assets/images/case/c.png'), linear-gradient(0deg, #2B2039 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #3D1E38;
+    position: relative;
+  }
+  
+  .ornaments-rarity4:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(228, 46, 248, 0.1) 0%, #E42EF8 49%, rgba(228, 46, 248, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  .ornaments-rarity10 {
+    background-image: url('@/assets/images/case/c.png'), linear-gradient(0deg, #2B2039 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #3D1E38;
+    position: relative;
+  }
+  
+  .ornaments-rarity10:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(228, 46, 248, 0.1) 0%, #E42EF8 49%, rgba(228, 46, 248, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  
+  .ornaments-rarity15 {
+    background-image: url('@/assets/images/case/c.png'), linear-gradient(0deg, #2B2039 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #3D1E38;
+    position: relative;
+  }
+  
+  .ornaments-rarity15:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(228, 46, 248, 0.1) 0%, #E42EF8 49%, rgba(228, 46, 248, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  
+  
+  .ornaments-rarity5 {
+    background-image: url('@/assets/images/case/b.png'), linear-gradient(0deg, #2D232D 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #3D1E1E;
+    position: relative;
+  }
+  
+  .ornaments-rarity5:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(247, 78, 77, 0.1) 0%, #F74E4D 49%, rgba(247, 78, 77, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  .ornaments-rarity11 {
+    background-image: url('@/assets/images/case/b.png'), linear-gradient(0deg, #2D232D 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #3D1E1E;
+    position: relative;
+  }
+  
+  .ornaments-rarity11:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(247, 78, 77, 0.1) 0%, #F74E4D 49%, rgba(247, 78, 77, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  .ornaments-rarity16 {
+    background-image: url('@/assets/images/case/b.png'), linear-gradient(0deg, #2D232D 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #3D1E1E;
+    position: relative;
+  }
+  
+  .ornaments-rarity16:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(247, 78, 77, 0.1) 0%, #F74E4D 49%, rgba(247, 78, 77, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  
+  
+  .ornaments-rarity6 {
+    background-image: url('@/assets/images/case/a.png'), linear-gradient(0deg, #2C2A2A 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #3D341E;
+    position: relative;
+  }
+  
+  .ornaments-rarity6:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(247, 182, 45, 0.1) 0%, #F7B62D 49%, rgba(247, 182, 45, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }
+  
+  .ornaments-rarity12 {
+    background-image: url('@/assets/images/case/a.png'), linear-gradient(0deg, #2C2A2A 0%, #1D1F2A 100%) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform .45s ease;
+    border-radius: 2px;
+    border: 1px solid #3D341E;
+    position: relative;
+  }
+  
+  .ornaments-rarity12:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(247, 182, 45, 0.1) 0%, #F7B62D 49%, rgba(247, 182, 45, 0.1) 100%);
+    left: 0;
+    bottom: 0;
+  
+  }

@@ -1,0 +1,57 @@
+.heade{
+  height: 57px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  .casename{
+    font-size: 24px;
+  }
+}
+.topnt{
+  height: 600px;
+  transition: opacity 0.3s ease;
+  background-image: url('assets/images/open/boxbg.png');
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.ornamentimg{
+  top: 0;
+}
+.caseline{
+  width: 594px;
+  height: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;opacity: 0.5;background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(86, 86, 86) 50%, rgba(0, 0, 0, 0) 100%);
+}
+.buycasebtn{
+  height: 46px;
+  width: 207px;
+}
+.numbtn{
+  width: 45px;height: 45px;line-height: 45px;text-align: center;
+}
+.numbtn:hover{
+  filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transition: filter 0.5s;
+  border-color: #31C1FF !important;
+}
+.topcaseyiyle{
+  font-size: 21px;font-weight: 600;
+}
+.topcase{
+  min-width: 1104px;
+  max-width: 1104px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.caselist{
+  margin: 0 auto;
+  flex-wrap: wrap;
+  min-width: 1104px;
+  max-width: 1104px;
+}
